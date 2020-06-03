@@ -13,6 +13,11 @@
     <link href="css/normalize.css" rel="stylesheet" type="text/css" />
     <link href="css/webflow.css" rel="stylesheet" type="text/css" />
     <link href="css/ongo-mobile.webflow.css" rel="stylesheet" type="text/css" />
+    <link
+      href="css/work-section-e25152.webflow.css"
+      rel="stylesheet"
+      type="text/css"
+    />
     <script
       src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"
       type="text/javascript"
@@ -21,9 +26,9 @@
       WebFont.load({
         google: {
           families: [
-            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic"
-          ]
-        }
+            "Montserrat:100,100italic,200,200italic,300,300italic,400,400italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic",
+          ],
+        },
       });
     </script>
     <script
@@ -37,7 +42,7 @@
     </script>
     <!-- [if lt IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js" type="text/javascript"></script><![endif] -->
     <script type="text/javascript">
-      !(function(o, c) {
+      !(function (o, c) {
         var n = c.documentElement,
           t = " w-mod-";
         (n.className += t + "js"),
@@ -61,7 +66,16 @@
           ><img
             src="images/logo5.png"
             data-w-id="4253ee8c-abdc-7af8-1963-29332b843768"
-            style="-webkit-transform:translate3d(-1500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-moz-transform:translate3d(-1500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);-ms-transform:translate3d(-1500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);transform:translate3d(-1500PX, 0, 0) scale3d(1, 1, 1) rotateX(0) rotateY(0) rotateZ(0) skew(0, 0)"
+            style="
+              -webkit-transform: translate3d(-1500px, 0, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -moz-transform: translate3d(-1500px, 0, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              -ms-transform: translate3d(-1500px, 0, 0) scale3d(1, 1, 1)
+                rotateX(0) rotateY(0) rotateZ(0) skew(0, 0);
+              transform: translate3d(-1500px, 0, 0) scale3d(1, 1, 1) rotateX(0)
+                rotateY(0) rotateZ(0) skew(0, 0);
+            "
             alt=""
             class="logo"
         /></a>
@@ -146,231 +160,236 @@
     </section>
     <div id="work" class="work">
       <h3 class="work-heading-2">Some of my recent Work</h3>
-      <div
-        data-delay="4000"
-        data-animation="slide"
-        data-autoplay="1"
-        data-easing="ease-in-out"
-        data-duration="1000"
-        data-infinite="1"
-        class="work-slider-2 w-slider"
-      >
-        <div class="w-slider-mask">
-          <div class="black-slide-2 w-slide">
-            <div class="slide-container-2 w-container">
-              <img
-                src="images/perspective_Isometric_hacienda-v2-500.png"
-                alt=""
-                class="slide-img ocean-img"
-              />
-              <div class="slide-content-right">
-                <h3>Oceanfront Hacienda</h3>
-                <p class="work-text">
-                  This Historical Spanish Villa in San Clemente California, was
-                  built in 1928 by San Clemente city founder Ole Hanson...
-                </p>
-                <div class="accordion-wrapper">
-                  <div class="accordion-item">
-                    <div class="accordion-item-trigger">
-                      <h5 class="heading-13 accordion-link">Read more...</h5>
+      <div class="work-wrapper">
+        <div
+          data-delay="4000"
+          data-animation="slide"
+          data-autoplay="1"
+          data-duration="700"
+          data-infinite="1"
+          class="slider w-slider"
+        >
+          <div class="mask w-slider-mask">
+            <div class="slide w-slide">
+              <div class="project-wrap">
+                <div class="project-pic-card"></div>
+                <div class="project-details-card">
+                  <div class="project-details-wrap">
+                    <a
+                      href="https://www.thailandexplorer.org/"
+                      target="_blank"
+                      class="link-block-2 w-inline-block"
+                    >
+                      <h3 class="project-title">Thailand Explorer</h3>
+                    </a>
+                    <div class="project-subtitle">
+                      Single Page Javascript App
                     </div>
-                    <div class="accordion-item-content">
-                      <p>
-                        In talking with the owners. I discovered that they were
-                        not getting enough bookings from their website. We also
-                        discovered that the booking process by email, was taking
-                        too much time for guests and management. Also it was
-                        hard for guest to find website online.
-                      </p>
+                    <p class="project-desc-text">
+                      Explore random locations in Thailand. I built a custom
+                      location API, that calls 3 other APIs to get data. All
+                      hand coded. Also, you will notice each time the landing
+                      pages loaded it shows a random image.
+                    </p>
+                    <h4 class="tech-heading">
+                      <strong class="bold-text">Technologies Used</strong>
+                    </h4>
+                    <div class="api-icon-wrap">
+                      <img src="images/api-icon_1api-icon.png" alt="" />
+                      <div class="api-text">
+                        Custom locations API that I built that get data from
+                        API’s
+                      </div>
                     </div>
+                    <div class="three-api-wrap hidden-text">
+                      <img
+                        src="images/240px-Google_Maps_icon.svg_1240px-Google_Maps_icon.svg.png"
+                        alt=""
+                        class="icon"
+                      />
+                      <div class="icon-text hidden">Google Maps</div>
+                      <img
+                        src="images/wiki-icon_1wiki-icon.png"
+                        alt=""
+                        class="icon"
+                      />
+                      <div class="icon-text hidden">Wiki Voyage</div>
+                      <img
+                        src="images/yt_logo_rgb_light.png"
+                        alt=""
+                        class="icon"
+                      />
+                    </div>
+
+                    <div class="three-api-wrap hidden-text">
+                      <img
+                        src="images/icons8-javascript_1icons8-javascript.png"
+                        alt=""
+                        class="icon"
+                      />
+                      <div class="icon-text hidden">Javascript</div>
+                      <img src="images/css_1css.png" alt="" class="icon" />
+                      <div class="icon-text code-text hidden">CSS</div>
+                      <img src="images/html_1html.png" alt="" class="icon" />
+                      <div class="icon-text hidden">HTML</div>
+                    </div>
+                    <a
+                      href="https://www.thailandexplorer.org/"
+                      target="_blank"
+                      class="visit-btn w-button"
+                      >Visit App</a
+                    >
                   </div>
                 </div>
-                <h4 class="second-work-heading">
-                  How I helped the Oceanfront Hacienda.
-                </h4>
-                <ul>
-                  <li class="bullet-text-2">
-                    Created an ideal <strong>Guest Persona</strong> to better
-                    empathize with guests.
-                  </li>
-                  <li class="bullet-text-2">
-                    Redesigned the website to be
-                    <strong>Mobile Friendly</strong> and easier to use.
-                  </li>
-                  <li class="bullet-text-2">
-                    Implemented <strong>Online Booking </strong>functionality.
-                    Saving a lot of time for the website user and the
-                    management.
-                  </li>
-                  <li class="bullet-text-2">
-                    Made the website easier to be found online, by optimizing
-                    <strong>Google Maps</strong> &amp;
-                    <strong>Google My Business</strong> listings.
-                  </li>
-                  <li class="bullet-text-2">
-                    Improved on page
-                    <strong>Search Engine Optimization.</strong> Optimized open
-                    graph settings for enhanced <strong>Social Sharing</strong>.
-                  </li>
-                  <li class="bullet-text-2">
-                    We would love to <strong>Help You</strong> also in any way
-                    we can.
-                  </li>
-                </ul>
-                <a
-                  href="https://www.oceanfronthacienda.com/"
-                  target="_blank"
-                  class="work-link-btn-2 w-button"
-                  >VISIT WEBSITE</a
-                >
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="project-wrap">
+                <div class="project-pic-card namjai-pic"></div>
+                <div class="project-details-card">
+                  <div class="project-details-wrap">
+                    <a
+                      href="https://www.namjai.io/"
+                      target="_blank"
+                      class="link-block-2 namjai-link w-inline-block"
+                    >
+                      <h3 class="project-title">Namjai</h3>
+                    </a>
+                    <div class="project-subtitle">React Web App</div>
+                    <img
+                      src="images/mobile-logo_1mobile-logo.png"
+                      alt=""
+                      class="namjai-logo"
+                    />
+                    <p class="project-desc-text">
+                      Namjai is a side project I am working on. A friend of mine
+                      Bruno Saez Lopez did the design work. I brought it to life
+                      in React, it’s hand styled with Styled Components. To
+                      manage Authentication and Data I used Firebase. It&#x27;s
+                      still a work in progress.
+                    </p>
+                    <h4 class="tech-heading">
+                      <strong class="bold-text">Technologies Used</strong>
+                    </h4>
+                    <div class="api-icon-wrap">
+                      <img src="images/firebase_1firebase.png" alt="" />
+                      <div class="api-text">Firebase</div>
+                    </div>
+                    <div class="three-api-wrap">
+                      <div class="icon-wrap">
+                        <img
+                          src="images/styled-components.png"
+                          alt="styled components"
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">
+                          Styled Components
+                        </div>
+                      </div>
+                      <div class="icon-wrap">
+                        <img
+                          src="images/react_1react.png"
+                          alt="react"
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">React</div>
+                      </div>
+                      <div class="icon-wrap">
+                        <img
+                          src="images/icons8-javascript_1icons8-javascript.png"
+                          alt="javascript"
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">Javascript</div>
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.namjai.io/"
+                      target="_blank"
+                      class="visit-btn w-button"
+                      >Visit App</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-slide">
+              <div class="project-wrap">
+                <div class="project-pic-card wc-pic"></div>
+                <div class="project-details-card">
+                  <div class="project-details-wrap">
+                    <a
+                      href="https://www.windowcleaningestimator.com/"
+                      target="_blank"
+                      class="link-block-2 wc-link w-inline-block"
+                    >
+                      <h3 class="project-title">Window Counter</h3>
+                    </a>
+                    <div class="project-subtitle">React Native App</div>
+                    <p class="project-desc-text">
+                      Window Counter is a React Native<strong> </strong>mobile
+                      app, that is built for<strong> </strong>iOS and Android
+                      platforms its live on Google Play and the App Store.
+                      Window Counter currently has over 1000 users. I built this
+                      app using feedback form a beta version I put out to the
+                      Window Cleaning community on Facebook.
+                    </p>
+                    <h4 class="tech-heading">
+                      <strong class="bold-text">Technologies Used</strong>
+                    </h4>
+                    <div class="api-icon-wrap">
+                      <img src="images/expo_icon_1expo_icon.png" alt="" />
+                      <div class="api-text">Expo</div>
+                    </div>
+                    <div class="three-api-wrap">
+                      <div class="icon-wrap">
+                        <img
+                          src="images/styled-components.png"
+                          alt=""
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">
+                          Styled Components
+                        </div>
+                      </div>
+                      <div class="icon-wrap">
+                        <img
+                          src="images/react_1react.png"
+                          alt=""
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">React Native</div>
+                      </div>
+                      <div class="icon-wrap">
+                        <img
+                          src="images/icons8-javascript_1icons8-javascript.png"
+                          alt=""
+                          class="icon"
+                        />
+                        <div class="icon-text boxed-text">Javascript</div>
+                      </div>
+                    </div>
+                    <a
+                      href="https://www.windowcleaningestimator.com/"
+                      target="_blank"
+                      class="visit-btn w-button"
+                      >Visit App</a
+                    >
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-          <div class="black-slide-2 w-slide">
-            <div class="slide-container-2 w-container">
-              <img
-                src="images/Thai-exp_Isometric.png"
-                alt=""
-                class="slide-img thai-img"
-              />
-              <div class="slide-content-right">
-                <h3><strong>Thailand Explorer</strong></h3>
-                <p>
-                  Thailand Explorer is a single page
-                  <strong>Javascript Web App</strong> to explore random
-                  locations in Thailand. <br />
-                </p>
-                <div class="accordion-wrapper">
-                  <div class="accordion-item">
-                    <div class="accordion-item-trigger">
-                      <h5 class="heading-13 accordion-link">Read more...</h5>
-                    </div>
-                    <div class="accordion-item-content">
-                      <p>
-                        Its is a side project I have been working on. It
-                        initially started as a class project from my time
-                        attending Thinkful’s Web Developer Bootcamp.
-                        <br />‍<br />I would love to integrate individual hotel
-                        and tour websites into the app. I really love spending
-                        time in Thailand and we live here part if the year. If
-                        you have any ideas on how to improve this app let me
-                        know.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <p><br /></p>
-                <h4 class="second-work-heading">
-                  <strong>Technologies Used</strong>
-                </h4>
-                <ul>
-                  <li class="bullet-text">
-                    Hand coded <strong>Javascript</strong> to implement random
-                    images and locations functionality.
-                  </li>
-                  <li class="bullet-text">
-                    <strong>Google Maps </strong>API to bring up a map of random
-                    location.
-                  </li>
-                  <li class="bullet-text">
-                    <strong>Custom API</strong> I built for locations in
-                    Thailand.
-                  </li>
-                  <li class="bullet-text">
-                    <strong>Wiki Voyage</strong> API to bring up random location
-                    information.
-                  </li>
-                  <li class="bullet-text">
-                    <strong>Custom API</strong> I built for locations in
-                    Thailand.
-                  </li>
-                  <li class="bullet-text">
-                    Hand coded <strong>HTML</strong> &amp;<strong> CSS </strong
-                    >For structure and style of the app.
-                  </li>
-                </ul>
-                <a
-                  href="https://www.thailandexplorer.org/"
-                  target="_blank"
-                  class="work-link-btn-2 w-button"
-                  >VISIT WEBSITE</a
-                >
-              </div>
-            </div>
+          <div class="left-arrow w-slider-arrow-left">
+            <div class="icon w-icon-slider-left"></div>
           </div>
-          <div class="black-slide-2 w-slide">
-            <div class="slide-container-2 w-container">
-              <img
-                src="images/wc-iso.png"
-                srcset="
-                  images/wc-iso.png  500w,
-                  images/wc-iso.png  800w,
-                  images/wc-iso.png 1149w
-                "
-                sizes="(max-width: 479px) 87vw, (max-width: 991px) 192.39584350585938px, 384.79168701171875px"
-                alt=""
-                class="slide-img"
-              />
-              <div class="slide-content-right">
-                <h3>Window Counter</h3>
-                <p>
-                  Window Counter is a <strong>React Native </strong>mobile app,
-                  that is built for<strong> iOS</strong> and
-                  <strong>Android</strong> platforms its live on
-                  <strong>Google Play</strong> and the
-                  <strong>App Store</strong>. Window Counter currently has over
-                  1000 users. I built this app using feedback form a beta
-                  version I put out to the Window Cleaning community on
-                  Facebook, its still a work in progress.
-                </p>
-                <p>
-                  I used to carry a clipboard with a pricing sheet, then I had
-                  to tally up all the types of windows and add all the
-                  subtotals. A lot of times the customer is following you around
-                  and I would forget to count windows or lose my count. Now I
-                  just press the buttons on my custom made counters and there is
-                  a distinct sound for add and another sound for subtract, so I
-                  know if I counted the window without even looking. Also it
-                  subtotals and gives you a running total all the time so
-                  it&#x27;s easy to see at a glance and make adjustments if
-                  necessary.
-                </p>
-                <div class="accordion-wrapper">
-                  <div class="accordion-item">
-                    <div class="accordion-item-trigger">
-                      <h5 class="heading-13 accordion-link">Read more...</h5>
-                    </div>
-                    <div class="accordion-item-content">
-                      <p>
-                        I used to be in the window cleaning industry and I
-                        wanted to create an app to make it easier to count many
-                        types of windows on a job site. This idea is what
-                        originally got me interested in learning to built apps.
-                        It was a long hard road of self study to finally get the
-                        first version live on the app stores.
-                      </p>
-                    </div>
-                  </div>
-                </div>
-                <a
-                  href="https://www.windowcleaningestimator.com/"
-                  target="_blank"
-                  class="work-link-btn-2 w-button"
-                  >VISIT WEBSITE</a
-                >
-              </div>
-            </div>
+          <div class="right-arrow w-slider-arrow-right">
+            <div class="icon-2 w-icon-slider-right"></div>
           </div>
+          <div class="w-slider-nav w-round"></div>
         </div>
-        <div class="left-arrow-2 w-slider-arrow-left">
-          <div class="w-icon-slider-left"></div>
-        </div>
-        <div class="right-arrow-2 w-slider-arrow-right">
-          <div class="w-icon-slider-right"></div>
-        </div>
-        <div class="w-slider-nav w-round"></div>
       </div>
-      <h3 class="testomonial-heading-2">Here Is What Clients Are Saying</h3>
+      <h3 class="testomonial-heading-2">Here Is What People Are Saying</h3>
       <div class="testimonial-text-wrapper">
         <p class="testimonial-text-2">
           Thank you for your time and assistance with developing the Oceanfront
@@ -380,31 +399,32 @@
           us feel like we were on the same team, so we knew we had made the
           right decision in choosing him to re-brand our business. Mike is
           reliable, flexible, and consistently delivers a valuable service.<br />‍<br />‍<strong
-            >Lora,<br />Oceanfront Hacienda</strong
+            >Lora Spicer,<br />Oceanfront Hacienda</strong
           >
         </p>
         <p class="testimonial-text-2 center-card">
-          Michael is awesome. Not only did he do what I asked, but actually went
-          above and beyond the description that I laid out. If Michael gives you
-          the chance to work with him, you should take it. If you don&#x27;t,
-          you might not know it, but you will be sorry. Once again, thank you
-          Michael the for the hard work you put into my project<br /><br /><strong
-            >Fredrick, </strong
-          ><br /><strong>Sendwell</strong>
+          Mike is a great guy who puts all their efforts in getting the job done
+          with fantastic results. He never gives up, and if he doesn't know how
+          to do something he will move the earth to find out and solve it. A
+          pleasure to have worked together in personal projects!<br /><br /><strong
+            >Bruno Saez Lopez, </strong
+          ><br /><strong>UX Designer</strong>
         </p>
         <p class="testimonial-text-2">
           <em
-            >Very professional work! Completely over delivered on my project and
-            I am very happy with the end results. Excited to work with Michael
-            again in the future. I would highly recommend his services to
-            anyone.<br /><br /></em
+            >Mike is very professional ,and knowledgeable in multiple fields. I
+            first reached out to him because I found out he was the developer of
+            one of my go to apps for work and I had some questions. I have never
+            really spoken to an app developer in the past ,and I never
+            understood the complexity of it. He went above and beyond to help me
+            better understand my own Business. I strongly recommend Mike.
+            <br /><br /></em
           ><strong
-            ><em>Logan,<br />My Traffic Hero</em></strong
+            ><em
+              >Sebastian Pica,<br />Viking Cleaning And Restoration Services
+            </em></strong
           >
         </p>
-      </div>
-      <div class="background-holder">
-        <div class="bg-2"></div>
       </div>
     </div>
     <div id="contact" class="contact contact-section">
@@ -425,7 +445,7 @@
               ><img
                 src="images/Icon-fb_1Icon-fb.png"
                 alt=""
-                class="social-icon"/></a
+                class="social-icon" /></a
             ><a
               href="https://www.instagram.com/my_landing_page_guy/"
               target="_blank"
@@ -433,12 +453,15 @@
               ><img
                 src="images/Icon-ig_1Icon-ig.png"
                 alt=""
-                class="social-icon"/></a
+                class="social-icon" /></a
             ><a
               href="https://www.linkedin.com/in/my-landingpage-guy/"
               target="_blank"
               class="w-inline-block"
-              ><img src="images/Icon-in_1Icon-in.png" alt="" class="social-icon"
+              ><img
+                src="images/Icon-in_1Icon-in.png"
+                alt=""
+                class="social-icon"
             /></a>
           </div>
         </div>
@@ -548,6 +571,13 @@
       crossorigin="anonymous"
     ></script>
     <script src="js/webflow.js" type="text/javascript"></script>
+    <script
+      src="https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.4.1.min.220afd743d.js?site=5ed64b18506d2e520b9e245e"
+      type="text/javascript"
+      integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+      crossorigin="anonymous"
+    ></script>
+    <!-- <script src="js/webflow.js" type="text/javascript"></script> -->
     <!-- [if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif] -->
   </body>
 </html>

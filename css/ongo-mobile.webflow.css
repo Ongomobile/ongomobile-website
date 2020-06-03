@@ -429,8 +429,8 @@
 .work {
   margin-top: 0px;
   padding-top: 60px;
-  padding-bottom: 140px;
-  background-color: #000;
+  padding-bottom: 60px;
+  background-color: black;
 }
 
 .bg-2 {
@@ -628,8 +628,20 @@
   z-index: -1;
   max-width: 100vw;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.9)), to(hsla(0, 0%, 100%, 0.9))), url('../images/coding.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.9), hsla(0, 0%, 100%, 0.9)), url('../images/coding.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.9)),
+      to(hsla(0, 0%, 100%, 0.9))
+    ),
+    url("../images/coding.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.9),
+      hsla(0, 0%, 100%, 0.9)
+    ),
+    url("../images/coding.jpg");
   background-position: 0px 0px, 50% 100%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -669,13 +681,25 @@
 }
 
 .contact.contact-section {
-  height: auto;
+  height: 100vh;
   padding-bottom: 120px;
   border-top-left-radius: 0px;
   border-top-right-radius: 0px;
   background-color: transparent;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(hsla(0, 0%, 100%, 0.86)), to(hsla(0, 0%, 100%, 0.86))), url('../images/coding.jpg');
-  background-image: linear-gradient(180deg, hsla(0, 0%, 100%, 0.86), hsla(0, 0%, 100%, 0.86)), url('../images/coding.jpg');
+  background-image: -webkit-gradient(
+      linear,
+      left top,
+      left bottom,
+      from(hsla(0, 0%, 100%, 0.86)),
+      to(hsla(0, 0%, 100%, 0.86))
+    ),
+    url("../images/coding.jpg");
+  background-image: linear-gradient(
+      180deg,
+      hsla(0, 0%, 100%, 0.86),
+      hsla(0, 0%, 100%, 0.86)
+    ),
+    url("../images/coding.jpg");
   background-position: 0px 0px, 50% 50%;
   background-size: auto, cover;
   background-repeat: repeat, no-repeat;
@@ -1027,7 +1051,7 @@
     -webkit-align-items: flex-end;
     -ms-flex-align: end;
     align-items: flex-end;
-    background-image: url('../images/wave.svg');
+    background-image: url("../images/wave.svg");
     background-position: 50% 0px;
     background-size: 30px;
     background-repeat: no-repeat;
@@ -1040,7 +1064,7 @@
     color: #4863f7;
   }
   .nav-link.w--current {
-    background-image: url('../images/wave_1.svg');
+    background-image: url("../images/wave_1.svg");
     color: #556ef6;
     font-weight: 600;
   }
@@ -1048,29 +1072,29 @@
     color: #4863f7;
   }
   .nav-link.repair {
-    background-image: url('../images/wrench_1.svg');
+    background-image: url("../images/wrench_1.svg");
   }
   .nav-link.repair.w--current {
-    background-image: url('../images/wrench.svg');
+    background-image: url("../images/wrench.svg");
   }
   .nav-link.tune {
-    background-image: url('../images/settings-1.svg');
+    background-image: url("../images/settings-1.svg");
   }
   .nav-link.tune.w--current {
-    background-image: url('../images/settings-1_1.svg');
+    background-image: url("../images/settings-1_1.svg");
   }
   .nav-link.setup {
-    background-image: url('../images/cog_1.svg');
+    background-image: url("../images/cog_1.svg");
   }
   .nav-link.setup.w--current {
-    background-image: url('../images/cog.svg');
+    background-image: url("../images/cog.svg");
     color: #4863f7;
   }
   .nav-link.display {
-    background-image: url('../images/brightness-increase.svg');
+    background-image: url("../images/brightness-increase.svg");
   }
   .nav-link.display.w--current {
-    background-image: url('../images/brightness-increase_1.svg');
+    background-image: url("../images/brightness-increase_1.svg");
   }
   .hero {
     height: auto;
@@ -1209,7 +1233,8 @@
     max-width: 100%;
   }
   .work {
-    padding-top: 60px;
+    max-width: none;
+    padding-top: 30px;
   }
   .slide-container-2 {
     min-height: 1010px;
@@ -1266,4 +1291,3 @@
     margin-bottom: 30%;
   }
 }
-
